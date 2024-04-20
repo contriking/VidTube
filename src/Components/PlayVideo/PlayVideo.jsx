@@ -64,7 +64,6 @@ function PlayVideo(){
                     <p>{apiData?apiData.snippet.channelTitle:""}</p>
                     <span>{channelData? value_Converter(channelData.statistics.subscriberCount):"1M"} Subscribers</span>
                 </div>
-                <button>Subscribe</button>
             </div>
             <div className="vid-desc">
                 <p>{apiData?apiData.snippet.description.slice(0,250):"Description here"}</p>
