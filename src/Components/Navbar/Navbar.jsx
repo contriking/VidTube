@@ -14,7 +14,6 @@ function Navbar({setSidebar}){
 
     const [searchQuery,setSearchQuery]=useState("");
     const navigate=useNavigate();
-    const btn=document.getElementById("searchButton");
 
     const searchQueryHandler=(e)=>{
         if((e?.key==="Enter" || e==="searchButton")&& searchQuery?.length > 0){
@@ -37,7 +36,7 @@ function Navbar({setSidebar}){
                         onKeyUp={searchQueryHandler}
                         value={searchQuery}
                     />
-                    <img src={search_icon} alt="" />
+                    
                 </div>
             </div>
 

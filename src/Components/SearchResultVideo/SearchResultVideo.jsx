@@ -16,7 +16,7 @@ function SearchResultVideo({query}){
     const [queryData,setqueryData]=useState([]);
 
     const fetchqueryData= async()=>{
-        const queryvideo_url=`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResult=50&q=${query}&key=${API_KEY}`;
+        const queryvideo_url=`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&maxResult=50&q=${query}&key=${API_KEY}`;
         await fetch(queryvideo_url).then(res=>res.json()).then(queryData=>setqueryData(queryData.items));
     }
 
