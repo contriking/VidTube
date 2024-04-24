@@ -9,7 +9,7 @@ import thumbnail6 from "../../assets/thumbnail6.png";
 import thumbnail7 from "../../assets/thumbnail7.png";
 import thumbnail8 from "../../assets/thumbnail8.png";
 import { Link } from "react-router-dom";
-import { API_KEY,value_Converter } from "../../../../VidTube/src/data";
+import { API_KEY,value_Converter } from "../../data";
 
 function SearchResultVideo({query}){
 
